@@ -4,7 +4,7 @@
 ## Motivation
 The DEFLATE algorithm is a widely used compression algorithm that is used in many file formats, such as PNG and ZIP. It is a lossless compression algorithm, meaning that the original data can be perfectly reconstructed from the compressed data.
 
-This library is slightly modified from the original implementation by Mark Adler and Jean-loup Gailly's zlib library, as this library uses a variation of the LZW algorithm created by 1waffle1 and fixed/optimized by me.
+This library is slightly modified from the original implementation by Mark Adler and Jean-loup Gailly's zlib library, as this library uses a variation of the LZW algorithm created by 1waffle1 and fixed/optimized by me and is slightly more primitive. rbx-deflate simply just runs the LZW algorithm with Huffman coding.
 
 ## Usage
 The library is simple to use.

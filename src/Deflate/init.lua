@@ -7,13 +7,13 @@ local LZW = require(script.LZW)
 local Huffman = require(script.Huffman)
 
 Deflate.encode = function(data: string) : string
-    local compressed = Huffman.encode(data)
-    return LZW.decompress(compressed)
+    data = LZW.compress(data)
+    return Huffman.encode(data)
 end
 
 Deflate.decode = function(data: string) : string
-    local decompressed = LZW.decode(data)
-    return Huffman.compress(decompressed)
+    data = Huffman.decode(data)
+    return LZW.decompress(data)
 end
 
 return Deflate
