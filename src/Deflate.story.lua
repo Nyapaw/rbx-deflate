@@ -1,8 +1,5 @@
 local Deflate = require(game.ReplicatedStorage.Deflate)
-local str = ""
-for i = 1, 100000 do
-    str = str .. string.char(math.random() < 0.5 and 60 or 71)
-end
+local str = script.Parent.Shakespeare.Source
 
 return function(target)
     local t = os.clock()
