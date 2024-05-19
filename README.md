@@ -8,7 +8,9 @@ This library is slightly modified from the original implementation by Mark Adler
 
 ## Usage
 The library is simple to use.
+
 `Deflate.encode(string)` will compress a string and return the compressed data.
+
 `Deflate.decode(string)` will decompress a string and return the decompressed data.
 
 Note that because of the nature of any compression algorithm, the compressed data may be larger than the original data. This is especially true for small strings.
